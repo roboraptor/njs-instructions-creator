@@ -9,11 +9,15 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "bootstrap": "^5.3.8",
     "next": "16.3.0-preview.0",
     "react": "19.2.7",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "19.2.7"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
