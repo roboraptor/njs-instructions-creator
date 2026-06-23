@@ -5,6 +5,9 @@ InstructionCreator is a sleek, professional web application designed to dynamica
 Built with **Next.js (App Router)**, **TypeScript**, **Bootstrap 5 (Dark Mode)**, and **SQLite**, it offers modular settings dashboards, custom presets management, and extensive data portability.
 
 ---
+<img width="1298" height="1953" alt="image" src="https://github.com/user-attachments/assets/3e6c21a9-f039-4de2-b45f-8e9fda2207ec" />
+
+---
 
 ## 🚀 Tech Stack
 
