@@ -5,9 +5,10 @@ import { getSnippets, getCategories, getPresets } from "@/lib/actions";
 import SnippetsTab from "@/components/settings/SnippetsTab";
 import CategoriesTab from "@/components/settings/CategoriesTab";
 import PresetsTab from "@/components/settings/PresetsTab";
+import ImportExportTab from "@/components/settings/ImportExportTab";
 
 export default function Settings() {
-  const [activeTab, setActiveTab] = useState<"snippets" | "categories" | "presets">("snippets");
+  const [activeTab, setActiveTab] = useState<"snippets" | "categories" | "presets" | "import-export">("snippets");
   const [stats, setStats] = useState({ snippets: 0, categories: 0, presets: 0 });
 
   const loadStats = async () => {
@@ -68,12 +69,21 @@ export default function Settings() {
             Manage Presets
           </button>
         </li>
+        <li className="nav-item">
+          <button
+            className={`nav-link fw-semibold px-2 ${activeTab === "import-export" ? "active text-primary" : "text-secondary"}`}
+            onClick={() => setActiveTab("import-export")}
+          >
+            Backups & Porting
+          </button>
+        </li>
       </ul>
 
       {/* Dynamic Tab Views */}
       {activeTab === "snippets" && <SnippetsTab onRefreshStats={loadStats} />}
       {activeTab === "categories" && <CategoriesTab onRefreshStats={loadStats} />}
       {activeTab === "presets" && <PresetsTab onRefreshStats={loadStats} />}
+      {activeTab === "import-export" && <ImportExportTab onRefreshStats={loadStats} />}
     </div>
   );
 }

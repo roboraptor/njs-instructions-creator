@@ -14,7 +14,8 @@
     "next": "^15.1.0",
     "react": "19.2.7",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "19.2.7"
+    "react-dom": "19.2.7",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
