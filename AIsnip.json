@@ -1,0 +1,244 @@
+{
+  "categories": [
+    {
+      "id": 4,
+      "name": "Role & Project Overview",
+      "header_text": "# Role & Project Overview",
+      "order_index": 0,
+      "parent_id": null
+    },
+    {
+      "id": 5,
+      "name": "Tech Stack",
+      "header_text": "## Tech Stack",
+      "order_index": 1,
+      "parent_id": 4
+    },
+    {
+      "id": 6,
+      "name": "Core System Architecture & Rules",
+      "header_text": "## Core System Architecture & Rules",
+      "order_index": 2,
+      "parent_id": 4
+    },
+    {
+      "id": 7,
+      "name": "DB schema ",
+      "header_text": "### Database Schema (better-sqlite3)",
+      "order_index": 3,
+      "parent_id": 6
+    },
+    {
+      "id": 8,
+      "name": "Localisation strategy",
+      "header_text": "### Localization Strategy",
+      "order_index": 4,
+      "parent_id": 6
+    },
+    {
+      "id": 9,
+      "name": "Features & Views",
+      "header_text": "## Application Features & Views",
+      "order_index": 5,
+      "parent_id": 4
+    },
+    {
+      "id": 10,
+      "name": "Globals Layout darkmode",
+      "header_text": "### Global Layout & Theme (Dark Mode)",
+      "order_index": 6,
+      "parent_id": 9
+    },
+    {
+      "id": 11,
+      "name": "Development Standards",
+      "header_text": "## **Development Standards**",
+      "order_index": 7,
+      "parent_id": 4
+    },
+    {
+      "id": 12,
+      "name": "Key Features",
+      "header_text": "## **Key Features**",
+      "order_index": 8,
+      "parent_id": 11
+    },
+    {
+      "id": 13,
+      "name": "Token-Saving",
+      "header_text": "## Token-Saving & Implementation Rules (Strict)",
+      "order_index": 8,
+      "parent_id": 4
+    }
+  ],
+  "snippets": [
+    {
+      "id": 5,
+      "title": "Dev Next TS BS",
+      "content": "You are an expert full-stack developer specializing in Next.js, TypeScript, Bootstrap and SQLite.",
+      "order_index": 1,
+      "category_id": 4
+    },
+    {
+      "id": 15,
+      "title": "No Bootstrap JS",
+      "content": "- **No Bootstrap JS:** All JS interactivity (collapses, modals) is handled by React useState.",
+      "order_index": 1,
+      "category_id": 11
+    },
+    {
+      "id": 18,
+      "title": "No Over-Engineering",
+      "content": "- **No Over-Engineering:** Do not install external state management libraries (Redux, Zustand) or heavy visualization tools unless explicitly asked. Use native React state and basic Bootstrap components.",
+      "order_index": 1,
+      "category_id": 13
+    },
+    {
+      "id": 21,
+      "title": "CSS Styling",
+      "content": "- **CSS Styling:** Rely purely on Bootstrap 5 utility classes (`d-flex`, `gap-3`, `btn-success`, `table-striped`) to keep custom CSS files at low or better zero bytes.",
+      "order_index": 1,
+      "category_id": 13
+    },
+    {
+      "id": 25,
+      "title": "Dictionary Strategy",
+      "content": "- **Localization Dictionary:** Store locales in `src/locales/` as static JSON schema files. Access keys using a custom React Context Provider or wrapper Hook instead of importing third-party libraries.",
+      "order_index": 1,
+      "category_id": 8
+    },
+    {
+      "id": 27,
+      "title": "Pagination and Filtering",
+      "content": "- **Pagination & Filtering:** Provide paginated tables or lazy-loading lists with query param filter controls to handle database records efficiently without overloading the browser thread.",
+      "order_index": 1,
+      "category_id": 12
+    },
+    {
+      "id": 6,
+      "title": "FW - Next.js",
+      "content": "- **Framework:** Next.js (App Router, API Routes for server-side operations)",
+      "order_index": 2,
+      "category_id": 5
+    },
+    {
+      "id": 16,
+      "title": "Theme",
+      "content": "- **Theme:** Use Bootstrap native data-bs-theme attribute on \\<body\\> (Dark/Light mode).",
+      "order_index": 2,
+      "category_id": 11
+    },
+    {
+      "id": 19,
+      "title": "Database Execution",
+      "content": "- **Database Execution:** Initialize the database connection as a single shared module (`src/lib/db.ts`). Use prepared statements for execution to ensure speed and safety.",
+      "order_index": 2,
+      "category_id": 13
+    },
+    {
+      "id": 23,
+      "title": "Agent Tool Protocol",
+      "content": "You have shell command execution capabilities. Proactively execute compiler builds (e.g., `npx tsc --noEmit`) and review dev logs to verify code changes before marking tasks as complete.",
+      "order_index": 2,
+      "category_id": 4
+    },
+    {
+      "id": 7,
+      "title": "Lang - TypeScript",
+      "content": "- **Language:** TypeScript (strict type safety required)",
+      "order_index": 3,
+      "category_id": 5
+    },
+    {
+      "id": 17,
+      "title": "Ressilient DB actions",
+      "content": "- **Resilience:** All DB actions are strictly inside Server Actions (src/lib/actions.ts), using parameterized queries to prevent SQL injection.",
+      "order_index": 3,
+      "category_id": 11
+    },
+    {
+      "id": 20,
+      "title": "No Placeholders",
+      "content": "- **No Placeholders:** When generating code, write complete API endpoints and components. Do not leave `// TODO: implement later` comments, as re-asking costs extra tokens.",
+      "order_index": 3,
+      "category_id": 13
+    },
+    {
+      "id": 8,
+      "title": "UI - Bootstrap",
+      "content": "- **UI Framework:** Bootstrap 5 (via standard CSS/JS or react-bootstrap, optimized for simple, clean responsive layout)",
+      "order_index": 4,
+      "category_id": 5
+    },
+    {
+      "id": 22,
+      "title": "DB-Types",
+      "content": "- **Types:** Define explicit interfaces for Database rows and API responses in a shared `src/types/index.ts` file.",
+      "order_index": 4,
+      "category_id": 13
+    },
+    {
+      "id": 26,
+      "title": "Clean Logs & Debugging",
+      "content": "- **Console Logging:** Clean up all debugging `console.log` statements before submitting your work. Server logs must remain clean and readable, logging only production error warnings.",
+      "order_index": 4,
+      "category_id": 11
+    },
+    {
+      "id": 9,
+      "title": "DB - BetterSqlite3",
+      "content": "- **Database:** better-sqlite3 (local file-based persistent storage)",
+      "order_index": 5,
+      "category_id": 5
+    },
+    {
+      "id": 28,
+      "title": "Brief Explanations",
+      "content": "- **Brief Explanations:** Answer questions concisely. Focus on demonstrating output via file contents rather than describing changes in paragraphs.",
+      "order_index": 5,
+      "category_id": 13
+    },
+    {
+      "id": 10,
+      "title": "Util - Excel",
+      "content": "- **Utilities:** `xlsx` (for Excel import/export).",
+      "order_index": 6,
+      "category_id": 5
+    },
+    {
+      "id": 11,
+      "title": "DB - Main",
+      "content": "Keep the schema normalized but simple. Store config and logs efficiently.\r\nEnsure all database operations are executed strictly in Server Components, Server Actions, or API Routes. Never import 'better-sqlite3' into Client Components.\r\nThe database must support the following entities and relations (handle the exact SQL table creation automatically within the app initialization):",
+      "order_index": 7,
+      "category_id": 7
+    },
+    {
+      "id": 24,
+      "title": "API Router Standard",
+      "content": "- **API Route Standard:** Place server-only processing logic in Next.js Route Handlers (`src/app/api/...`). Keep payloads small and return standardized JSON objects with appropriate HTTP status codes.",
+      "order_index": 7,
+      "category_id": 5
+    },
+    {
+      "id": 12,
+      "title": "DB - conf sungleton",
+      "content": "- **App Config:** Singleton table holding global application settings.",
+      "order_index": 8,
+      "category_id": 7
+    },
+    {
+      "id": 13,
+      "title": "Navbar",
+      "content": "- **Navbar:** A simple global top navigation bar containing links to all main views (Dashboard, Reports, Admin).",
+      "order_index": 9,
+      "category_id": 10
+    },
+    {
+      "id": 14,
+      "title": "Theme management",
+      "content": "- **Theme Management:** \r\n  - Must use standard Bootstrap 5.3+ native dark mode (by toggling the `data-bs-theme` attribute on the `<html>` or `<body>` tag).\r\n  - **Default:** Auto-detect the OS system preference via `window.matchMedia('(prefers-color-scheme: dark)')`.\r\n  - **Manual Override:** Include a simple Monitor/Sun/Moon icon toggle in the Navbar. (Monitor for mode based on system)\r\n  - **Persistence:** Save any manual theme selection to `localStorage` so it persists across reloads without causing hydration mismatches in Next.js. Handled globally via a `ThemeProvider` React Context.",
+      "order_index": 10,
+      "category_id": 10
+    }
+  ]
+}

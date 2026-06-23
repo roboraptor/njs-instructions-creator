@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "InstructionCreator",
@@ -13,8 +14,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" data-bs-theme="dark">
+      <body>
+        <Navbar />
+        <main className="container">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
