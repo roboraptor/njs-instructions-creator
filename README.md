@@ -127,3 +127,15 @@ Build and compile the application for production deployment:
 npm run build
 npm run start
 ```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions of all kinds! If you have suggestions for new prompt templates, custom snippet categories, or improvements to the web application:
+
+1. **Suggest New Snippets or Categories**: 
+   * If there is an AI prompt template or developer standard you think would be valuable to include by default, please **open an issue**.
+   * You can export your suggestions using the **Tree Excel** utility and attach the spreadsheet or JSON backup to your submission.
+
+
